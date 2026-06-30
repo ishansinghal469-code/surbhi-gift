@@ -11,6 +11,11 @@ import BookDetail from "./pages/BookDetail";
 import AddBook from "./pages/AddBook";
 import AddDay from "./pages/AddDay";
 import AddTask from "./pages/AddTask";
+import Wardrobe from "./pages/Wardrobe";
+import Expenses from "./pages/Expenses";
+import Tarot from "./pages/Tarot";
+import AddExpense from "./pages/AddExpense";
+import ExpenseDetail from "./pages/ExpenseDetail";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +31,11 @@ function App() {
         <Route path="/books/add" element={<AddBook />} />
         <Route path="/planner/add-day" element={<AddDay />} />
         <Route path="/planner/add-task" element={<AddTask />} />
+        <Route path="/wardrobe" element={<Wardrobe />} />
+        <Route path="/expenses" element={<Expenses />} />
+        <Route path="/tarot" element={<Tarot />} />
+        <Route path="/expenses/add" element={<AddExpense />} />
+        <Route path="/expenses/:id" element={<ExpenseDetail />} />
       </Routes>
     </BrowserRouter>
   );
