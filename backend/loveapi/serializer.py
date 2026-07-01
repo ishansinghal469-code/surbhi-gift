@@ -60,21 +60,12 @@ class VideoSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class MemorySerializer(serializers.ModelSerializer):
-    photos = serializers.PrimaryKeyRelatedField(
-        many=True,
-        queryset=Photo.objects.all(),
-        required=False
-    )
-
-    videos = serializers.PrimaryKeyRelatedField(
-        many=True,
-        queryset=Video.objects.all(),
-        required=False
-    )
+    photos = PhotoSerializer(many=True, read_only=True)
+    videos = VideoSerializer(many=True, read_only=True)
 
     class Meta:
         model = Memory
-        fields = '__all__'
+        fields = "__all__"
 
 class PlaylistSerializer(serializers.ModelSerializer):
     class Meta:

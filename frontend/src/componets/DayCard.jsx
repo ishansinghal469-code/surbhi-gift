@@ -2,26 +2,26 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const categoryIcons = {
-  study:    "📖",
-  work:     "💼",
-  gaming:   "🎮",
-  reading:  "📚",
+  study: "📖",
+  work: "💼",
+  gaming: "🎮",
+  reading: "📚",
   selfcare: "🌿",
-  craft:    "🔮",
-  other:    "✦",
+  craft: "🔮",
+  other: "✦",
 };
 
 const priorityStyles = {
-  high:   { dot: "bg-red-400/70",   label: "text-red-400/70",   text: "high"   },
+  high: { dot: "bg-red-400/70", label: "text-red-400/70", text: "high" },
   medium: { dot: "bg-amber-400/70", label: "text-amber-400/70", text: "medium" },
-  low:    { dot: "bg-teal-400/70",  label: "text-teal-400/70",  text: "low"    },
+  low: { dot: "bg-teal-400/70", label: "text-teal-400/70", text: "low" },
 };
 
 function DayCard({ day }) {
   const [hovered, setHovered] = useState(false);
 
   const icon = categoryIcons[day.category] ?? "✦";
-  const p    = priorityStyles[day.priority] ?? priorityStyles.medium;
+  const p = priorityStyles[day.priority] ?? priorityStyles.medium;
 
   return (
     <div
@@ -67,21 +67,16 @@ function DayCard({ day }) {
         <div className="flex flex-col gap-2 flex-1 min-w-0">
 
           {/* Title as link */}
-          <Link
-            to={`/daymanager/${day.id}`}
-            className="no-underline"
+          <h2
+            className={`
+    font-serif italic font-normal text-base leading-snug
+    transition-colors duration-200 m-0
+    ${hovered ? "text-teal-200" : "text-teal-50"}
+    ${day.completed ? "line-through text-teal-100/40" : ""}
+  `}
           >
-            <h2
-              className={`
-                font-serif italic font-normal text-base leading-snug
-                transition-colors duration-200 m-0
-                ${hovered ? "text-teal-200" : "text-teal-50"}
-                ${day.completed ? "line-through text-teal-100/40" : ""}
-              `}
-            >
-              {icon} &nbsp;{day.title}
-            </h2>
-          </Link>
+            {icon} &nbsp;{day.title}
+          </h2>
 
           {/* Description */}
           {day.description && (

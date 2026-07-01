@@ -27,6 +27,9 @@ function AddDayManager() {
   const [priority, setPriority]     = useState("medium");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError]           = useState(null);
+  const [date, setDate] = useState(
+    new Date().toISOString().split("T")[0]
+);
 
   const navigate = useNavigate();
 
@@ -41,6 +44,7 @@ function AddDayManager() {
         description,
         start_time: startTime,
         end_time:   endTime,
+        date,
         category,
         priority,
       });

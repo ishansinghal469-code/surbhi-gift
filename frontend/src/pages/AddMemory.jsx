@@ -154,38 +154,81 @@ function AddMemory() {
 
           {/* Photos */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              photos
-            </label>
-            <label className="
-              relative flex items-center gap-3 cursor-pointer
-              bg-teal-900/15 border border-dashed border-teal-700/30
-              hover:border-teal-500/50 hover:bg-teal-900/25
-              rounded-lg px-4 py-4 transition-all duration-200
-            ">
-              <svg className="w-5 h-5 text-teal-500/50 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <div className="flex flex-col">
-                <span className="text-teal-100/50 text-sm italic">
-                  {photos.length > 0
-                    ? `${photos.length} photo${photos.length > 1 ? "s" : ""} selected`
-                    : "choose photos..."}
-                </span>
-                <span className="text-teal-500/35 text-[10px] tracking-wide mt-0.5">
-                  jpg, png, webp — multiple allowed
-                </span>
-              </div>
-              <input
-                type="file"
-                multiple
-                accept="image/*"
-                onChange={(e) => setPhotos(Array.from(e.target.files))}
-                className="absolute inset-0 opacity-0 cursor-pointer"
-              />
-            </label>
+            {/* Photos */}
+            <div className="flex flex-col gap-1.5">
+              <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
+                photos
+              </label>
+
+              <label
+                className="
+      relative flex items-center gap-3 cursor-pointer
+      bg-teal-900/15 border border-dashed border-teal-700/30
+      hover:border-teal-500/50 hover:bg-teal-900/25
+      rounded-lg px-4 py-4 transition-all duration-200
+    "
+              >
+                <svg
+                  className="w-5 h-5 text-teal-500/50 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.4"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+
+                <div className="flex flex-col">
+                  <span className="text-teal-100/50 text-sm italic">
+                    {photos.length > 0
+                      ? `${photos.length} photo${photos.length > 1 ? "s" : ""} selected`
+                      : "choose photos..."}
+                  </span>
+
+                  <span className="text-teal-500/35 text-[10px] tracking-wide mt-0.5">
+                    You can add more later
+                  </span>
+                </div>
+
+                <input
+                  type="file"
+                  multiple
+                  accept="image/*"
+                  onChange={(e) => {
+                    const newFiles = Array.from(e.target.files);
+                    setPhotos((prev) => [...prev, ...newFiles]);
+                    e.target.value = "";
+                  }}
+                  className="absolute inset-0 opacity-0 cursor-pointer"
+                />
+              </label>
+
+              {photos.length > 0 && (
+                <div className="flex flex-wrap gap-3 mt-2">
+                  {photos.map((photo, index) => (
+                    <div key={index} className="relative">
+                      <img
+                        src={URL.createObjectURL(photo)}
+                        alt=""
+                        className="w-20 h-20 object-cover rounded-lg border border-teal-700/30"
+                      />
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setPhotos((prev) => prev.filter((_, i) => i !== index))
+                        }
+                        className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-red-500 text-white text-xs hover:bg-red-600"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* Photo preview thumbnails */}
             {photos.length > 0 && (
@@ -204,37 +247,81 @@ function AddMemory() {
 
           {/* Videos */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              videos
-            </label>
-            <label className="
-              relative flex items-center gap-3 cursor-pointer
-              bg-teal-900/15 border border-dashed border-teal-700/30
-              hover:border-teal-500/50 hover:bg-teal-900/25
-              rounded-lg px-4 py-4 transition-all duration-200
-            ">
-              <svg className="w-5 h-5 text-teal-500/50 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <polygon points="23 7 16 12 23 17 23 7"/>
-                <rect x="1" y="5" width="15" height="14" rx="2"/>
-              </svg>
-              <div className="flex flex-col">
-                <span className="text-teal-100/50 text-sm italic">
-                  {videos.length > 0
-                    ? `${videos.length} video${videos.length > 1 ? "s" : ""} selected`
-                    : "choose videos..."}
-                </span>
-                <span className="text-teal-500/35 text-[10px] tracking-wide mt-0.5">
-                  mp4, mov, webm — multiple allowed
-                </span>
-              </div>
-              <input
-                type="file"
-                multiple
-                accept="video/*"
-                onChange={(e) => setVideos(Array.from(e.target.files))}
-                className="absolute inset-0 opacity-0 cursor-pointer"
-              />
-            </label>
+            {/* Videos */}
+            <div className="flex flex-col gap-1.5">
+              <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
+                videos
+              </label>
+
+              <label
+                className="
+      relative flex items-center gap-3 cursor-pointer
+      bg-teal-900/15 border border-dashed border-teal-700/30
+      hover:border-teal-500/50 hover:bg-teal-900/25
+      rounded-lg px-4 py-4 transition-all duration-200
+    "
+              >
+                <svg
+                  className="w-5 h-5 text-teal-500/50 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.4"
+                >
+                  <polygon points="23 7 16 12 23 17 23 7" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" />
+                </svg>
+
+                <div className="flex flex-col">
+                  <span className="text-teal-100/50 text-sm italic">
+                    {videos.length > 0
+                      ? `${videos.length} video${videos.length > 1 ? "s" : ""} selected`
+                      : "choose videos..."}
+                  </span>
+
+                  <span className="text-teal-500/35 text-[10px] tracking-wide mt-0.5">
+                    You can add more later
+                  </span>
+                </div>
+
+                <input
+                  type="file"
+                  multiple
+                  accept="video/*"
+                  onChange={(e) => {
+                    const newFiles = Array.from(e.target.files);
+                    setVideos((prev) => [...prev, ...newFiles]);
+                    e.target.value = "";
+                  }}
+                  className="absolute inset-0 opacity-0 cursor-pointer"
+                />
+              </label>
+
+              {videos.length > 0 && (
+                <div className="flex flex-col gap-2 mt-2">
+                  {videos.map((video, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center justify-between bg-teal-900/20 border border-teal-700/20 rounded-lg px-3 py-2"
+                    >
+                      <span className="text-teal-100/70 text-sm truncate">
+                        🎥 {video.name}
+                      </span>
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setVideos((prev) => prev.filter((_, i) => i !== index))
+                        }
+                        className="ml-3 text-red-400 hover:text-red-300"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Divider */}

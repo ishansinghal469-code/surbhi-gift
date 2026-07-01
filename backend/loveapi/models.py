@@ -86,32 +86,14 @@ class Task(models.Model):
     
 class Expense(models.Model):
 
-    CATEGORY_CHOICES = [
-        ('food', 'Food'),
-        ('shopping', 'Shopping'),
-        ('travel', 'Travel'),
-        ('other', 'Other'),
-    ]
-    PRIORITY_CHOICES = [
-    ('low', 'Low'),
-    ('medium', 'Medium'),
-    ('high', 'High'),
-]
-
-    priority = models.CharField(
-    max_length=10,
-    choices=PRIORITY_CHOICES,
-    default='medium'
-    )
-
     title = models.CharField(max_length=100)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    date = models.DateTimeField()
+    date = models.DateField()
     category = models.CharField(
         max_length=20,
-        choices=CATEGORY_CHOICES
-    )
 
+    )
+    note= models.TextField(blank=True)
     def __str__(self):
         return f"{self.title} - {self.amount}"
     
@@ -150,7 +132,7 @@ class TarotReading(models.Model):
 class Photo(models.Model):
     image = models.ImageField(upload_to='photos/')
     description = models.TextField(blank=True)
-    clicked_at = models.DateTimeField()
+    clicked_at = models.DateTimeField(auto_now_add=True)
     memory = models.ForeignKey(
         Memory,
         on_delete=models.CASCADE,
@@ -159,11 +141,12 @@ class Photo(models.Model):
 
     def __str__(self):
         return f"Photo {self.id}"
-    
+
+
 class Video(models.Model):
     video_file = models.FileField(upload_to='videos/')
     description = models.TextField(blank=True)
-    recorded_at = models.DateTimeField()
+    recorded_at = models.DateTimeField(auto_now_add=True)
     memory = models.ForeignKey(
         Memory,
         on_delete=models.CASCADE,
@@ -172,6 +155,7 @@ class Video(models.Model):
 
     def __str__(self):
         return f"Video {self.id}"
+    
     
 class Playlist(models.Model):
     title = models.CharField(max_length=100)
@@ -186,3 +170,8 @@ class Playlist(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+
+
+    
