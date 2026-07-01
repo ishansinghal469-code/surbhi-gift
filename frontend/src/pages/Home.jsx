@@ -5,7 +5,7 @@ const sections = [
   {
     to: "/memories",
     label: "Memories",
-    sub: "our moments",
+    sub: "toooooo manyyyyy",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <rect x="3" y="5" width="18" height="14" rx="2"/>
@@ -17,7 +17,7 @@ const sections = [
   {
     to: "/playlists",
     label: "Playlists",
-    sub: "sounds we love",
+    sub: "perfect",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <circle cx="12" cy="12" r="9"/>
@@ -29,7 +29,7 @@ const sections = [
   {
     to: "/books",
     label: "Library",
-    sub: "her bookshelf",
+    sub: "books!!!!",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -40,7 +40,7 @@ const sections = [
   {
     to: "/outfits",
     label: "Lookbook",
-    sub: "her fits",
+    sub: "you look amazing whatever you wear",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/>
@@ -50,7 +50,7 @@ const sections = [
   {
     to: "/planner",
     label: "Planner",
-    sub: "our plans",
+    sub: "plan yo shi",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -63,7 +63,7 @@ const sections = [
   {
     to: "/expenses",
     label: "Expenses",
-    sub: "our spending",
+    sub: "mota paisa",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <line x1="12" y1="1" x2="12" y2="23"/>
@@ -74,7 +74,7 @@ const sections = [
   {
     to: "/tarot",
     label: "Tarot",
-    sub: "the cards speak",
+    sub: "I believe in it",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/>
@@ -83,8 +83,8 @@ const sections = [
   },
   {
     to: "/letters",
-    label: "Love Letters",
-    sub: "words for her",
+    label: "..",
+    sub: "words",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -142,6 +142,76 @@ function DomeSkyline() {
   );
 }
 
+function LighthouseScene() {
+  return (
+    <svg
+      viewBox="0 0 400 600"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid slice"
+      className="absolute inset-0 h-full w-full"
+      aria-hidden="true"
+    >
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#0a2e2a" />
+          <stop offset="55%" stopColor="#071f1c" />
+          <stop offset="100%" stopColor="#04110f" />
+        </linearGradient>
+        <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#0d4a44" />
+          <stop offset="45%" stopColor="#0a3530" />
+          <stop offset="100%" stopColor="#051b18" />
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#fbbf6f" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#fbbf6f" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+
+      {/* sky */}
+      <rect x="0" y="0" width="400" height="320" fill="url(#sky)" />
+
+      {/* sea */}
+      <rect x="0" y="300" width="400" height="300" fill="url(#sea)" />
+
+      {/* wave layers */}
+      <path d="M0,330 Q50,318 100,330 T200,330 T300,330 T400,330 V600 H0 Z" fill="#0c4540" opacity="0.55" />
+      <path d="M0,380 Q60,365 120,380 T240,380 T360,380 T400,378 V600 H0 Z" fill="#0a3a35" opacity="0.55" />
+      <path d="M0,450 Q70,435 140,450 T280,450 T400,448 V600 H0 Z" fill="#072925" opacity="0.6" />
+      <path d="M0,520 Q80,508 160,520 T320,520 T400,518 V600 H0 Z" fill="#041815" opacity="0.7" />
+
+      {/* foam streaks */}
+      <path d="M40,340 Q90,335 130,345 Q170,355 220,345" stroke="#7fd9c9" strokeWidth="1.5" fill="none" opacity="0.25" />
+      <path d="M180,400 Q230,392 270,402 Q310,412 360,400" stroke="#7fd9c9" strokeWidth="1.5" fill="none" opacity="0.2" />
+      <path d="M20,470 Q70,460 120,472 Q170,484 220,470" stroke="#7fd9c9" strokeWidth="1.5" fill="none" opacity="0.2" />
+
+      {/* rock outcrop */}
+      <path d="M150,330 L175,300 L195,318 L210,295 L235,330 L260,322 L270,340 L130,340 Z" fill="#04110f" />
+
+      {/* lighthouse base/house */}
+      <rect x="168" y="280" width="44" height="36" fill="#0e2622" />
+      <path d="M165,280 L190,265 L215,280 Z" fill="#7a2e2e" />
+
+      {/* lighthouse tower */}
+      <rect x="183" y="200" width="14" height="84" fill="#0e2622" />
+      <rect x="183" y="200" width="14" height="6" fill="#7fd9c9" opacity="0.3" />
+      <rect x="183" y="218" width="14" height="6" fill="#7fd9c9" opacity="0.2" />
+      <rect x="183" y="236" width="14" height="6" fill="#7fd9c9" opacity="0.2" />
+
+      {/* lantern room + glow */}
+      <circle cx="190" cy="192" r="22" fill="url(#glow)" />
+      <rect x="181" y="184" width="18" height="14" rx="2" fill="#fbbf6f" opacity="0.85" />
+      <path d="M178,184 L190,170 L202,184 Z" fill="#0e2622" />
+      <line x1="190" y1="170" x2="190" y2="160" stroke="#7fd9c9" strokeWidth="1.2" opacity="0.6" />
+      <polygon points="187,160 190,153 193,160" fill="#7fd9c9" opacity="0.6" />
+
+      {/* light beam sweep */}
+      <polygon points="190,192 60,120 130,150" fill="#fbbf6f" opacity="0.08" />
+      <polygon points="190,192 340,140 270,170" fill="#fbbf6f" opacity="0.08" />
+    </svg>
+  );
+}
+
 function NavCard({ to, label, sub, icon }) {
   const [hovered, setHovered] = useState(false);
   return (
@@ -157,22 +227,13 @@ function NavCard({ to, label, sub, icon }) {
             : "bg-teal-900/10 border-teal-700/20"}
         `}
       >
-        {/* Top shimmer line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-500 to-transparent opacity-60" />
-
-        {/* Icon */}
-        <div className="text-teal-400 opacity-85">
-          {icon}
-        </div>
-
-        {/* Text */}
+        <div className="text-teal-400 opacity-85">{icon}</div>
         <div>
           <p className="font-serif italic text-[15px] font-normal text-teal-50 mb-0.5 tracking-wide">
             {label}
           </p>
-          <p className="text-[11px] text-teal-100/40 tracking-wider">
-            {sub}
-          </p>
+          <p className="text-[11px] text-teal-100/40 tracking-wider">{sub}</p>
         </div>
       </div>
     </Link>
@@ -183,46 +244,55 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#071a18] font-serif">
 
-      {/* ── HERO ── */}
-      <div className="relative overflow-hidden">
-        <DomeSkyline />
+      {/* ── HERO with lighthouse scene + dome skyline ── */}
+      <div className="relative h-[70vh] min-h-[480px] overflow-hidden">
+        <LighthouseScene />
 
-        {/* Floating corner stars */}
-        <span className="absolute top-[18%] left-[5%] text-teal-500 opacity-35 pointer-events-none text-sm">✦</span>
-        <span className="absolute top-[60%] left-[2%] text-teal-500 opacity-35 pointer-events-none text-xs">✦</span>
-        <span className="absolute top-[25%] right-[6%] text-teal-500 opacity-35 pointer-events-none text-sm">✦</span>
-        <span className="absolute top-[70%] right-[3%] text-teal-500 opacity-35 pointer-events-none text-xs">✦</span>
+        {/* skyline silhouette layered over the painting, anchored to bottom */}
+        <div className="absolute inset-x-0 bottom-0 opacity-70">
+          <DomeSkyline />
+        </div>
 
-        <div className="relative text-center px-6 pt-4 pb-10">
+        {/* vignette so text stays legible */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071a18]/20 via-transparent to-[#071a18]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071a18]/40 via-transparent to-[#071a18]/40" />
 
-          {/* Ornament */}
-          <p className="text-[10px] tracking-[8px] text-teal-500 opacity-80 mb-3">
+        {/* floating accent badge, echoing the "Save" chip */}
+        <span className="absolute top-5 right-5 rounded-full bg-teal-600 px-4 py-1.5 text-xs font-sans font-semibold tracking-wide text-teal-50 shadow-lg shadow-black/30">
+          for my best person
+        </span>
+
+        {/* floating stars */}
+        <span className="absolute top-[18%] left-[5%] text-teal-300 opacity-50 pointer-events-none text-sm">✦</span>
+        <span className="absolute top-[60%] left-[3%] text-teal-300 opacity-40 pointer-events-none text-xs">✦</span>
+        <span className="absolute top-[25%] right-[8%] text-teal-300 opacity-40 pointer-events-none text-sm">✦</span>
+
+        {/* title block */}
+        <div className="absolute inset-x-0 bottom-16 px-6 text-center">
+          <p className="text-[10px] tracking-[8px] text-teal-300 opacity-80 mb-3">
             ✦ &nbsp; ✦ &nbsp; ✦
           </p>
-
-          {/* Name */}
-          <h1 className="font-serif italic font-normal text-[clamp(26px,6vw,38px)] text-teal-50 tracking-wide leading-tight m-0">
+          <h1 className="font-serif italic font-normal text-[clamp(28px,7vw,42px)] text-teal-50 tracking-wide leading-tight m-0 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             Supi
           </h1>
-
-          {/* Divider + tagline */}
-          <div className="flex items-center justify-center gap-2 my-3 max-w-sm mx-auto">
-            <div className="flex-1 h-px bg-teal-500/30" />
-            <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-            <p className="italic text-[12px] text-teal-100/50 tracking-wide whitespace-nowrap m-0">
-              i love you  
+          <div className="flex items-center justify-center gap-2 mt-3 max-w-sm mx-auto">
+            <div className="flex-1 h-px bg-teal-300/30" />
+            <div className="w-1.5 h-1.5 bg-teal-300 rotate-45 shrink-0" />
+            <p className="italic text-[12px] text-teal-100/70 tracking-wide whitespace-nowrap m-0">
+              i love you
             </p>
-            <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-            <div className="flex-1 h-px bg-teal-500/30" />
+            <div className="w-1.5 h-1.5 bg-teal-300 rotate-45 shrink-0" />
+            <div className="flex-1 h-px bg-teal-300/30" />
           </div>
+        </div>
 
+        {/* floating pill buttons, echoing "Visit site" / share */}
+        <div className="absolute inset-x-5 bottom-4 flex items-center justify-between">
         </div>
       </div>
 
       {/* ── GRID ── */}
-      <div className="px-5 pb-12 max-w-xl mx-auto">
-
-        {/* Nav label */}
+      <div className="px-5 pb-12 pt-10 max-w-xl mx-auto">
         <p className="text-[10px] tracking-[0.14em] uppercase text-teal-500/50 text-center mb-5">
           — navigate —
         </p>
@@ -233,11 +303,9 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Footer */}
         <p className="text-center mt-10 italic text-[12px] text-teal-500/35 tracking-wide">
-          made with love &nbsp;✦&nbsp; teal &amp; candlelight
+          made with love 
         </p>
-
       </div>
     </div>
   );

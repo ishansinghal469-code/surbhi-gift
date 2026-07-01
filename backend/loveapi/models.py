@@ -117,9 +117,10 @@ class Expense(models.Model):
     
 class LoveLetter(models.Model):
     message = models.TextField()
+    title = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
-        return self.message[:10]
+        return self.title if self.title else f"Love Letter {self.message[:10]}"
     
 class TarotCard(models.Model):
     name = models.CharField(max_length=100)
