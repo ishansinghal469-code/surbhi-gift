@@ -62,7 +62,7 @@ function Expenses() {
           <div className="flex-1 h-px bg-teal-500/25" />
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <p className="italic text-[11px] text-teal-100/40 tracking-wide m-0 whitespace-nowrap">
-            keeping track, together
+            keep track of your expenses i am sorry this page is also not designed well we can design these pages together tho ;/
           </p>
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <div className="flex-1 h-px bg-teal-500/25" />
@@ -77,7 +77,7 @@ function Expenses() {
         ">
           <div>
             <p className="text-[10px] tracking-[0.14em] uppercase text-teal-500/50 mb-1">
-              total spent
+              total bags spent
             </p>
             <p className="text-teal-50 text-2xl font-serif italic">
               ₹{total.toLocaleString("en-IN")}
@@ -133,7 +133,7 @@ function Expenses() {
           <div className="text-center py-20">
             <p className="text-4xl mb-4 opacity-30">✦</p>
             <p className="font-serif italic text-teal-100/30 text-lg">
-              no expenses found
+              not using this page huh :(
             </p>
             <p className="text-teal-500/30 text-xs tracking-widest mt-2">
               try a different search
@@ -150,7 +150,7 @@ function Expenses() {
 
       {/* ── FOOTER ── */}
       <p className="text-center pb-10 italic text-[11px] text-teal-500/30 tracking-wide">
-        {expenses.length} expenses &nbsp;✦&nbsp; tracked with care
+        {expenses.length} you are the prettiest person ever
       </p>
 
     </div>

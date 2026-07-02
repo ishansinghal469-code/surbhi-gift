@@ -3,6 +3,60 @@ import axios from "axios";
 import MemoryCard from "../componets/MemoryCard";
 import { Link } from "react-router-dom";
 
+const WOOD_DARK   = "#3B1F0E";
+const WOOD_MID    = "#6B3A1F";
+const WOOD_LIGHT  = "#9B6235";
+const GOLD        = "#C8922A";
+const GOLD_LIGHT  = "#E8B84B";
+const PARCHMENT   = "#F2E0B6";
+const PARCHMENT_DARK = "#DEC99A";
+const INK         = "#2C1A0E";
+const BG_GREEN    = "#1E3320";
+const BG_GREEN_DARK = "#132218";
+
+const pixelFont = "'Press Start 2P', monospace";
+
+function PixelStar({ size = "8px" }) {
+  return (
+    <span style={{ color: GOLD, fontFamily: pixelFont, fontSize: size }}>
+      ✦
+    </span>
+  );
+}
+
+function WoodPanel({ children, style = {} }) {
+  return (
+    <div style={{ position: "relative", ...style }}>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          translate: "4px 4px",
+          background: WOOD_DARK,
+          borderRadius: "2px",
+          zIndex: 0,
+          opacity: 0.7,
+        }}
+      />
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          border: `4px solid ${WOOD_DARK}`,
+          borderRadius: "2px",
+          background: WOOD_DARK,
+        }}
+      >
+        <div style={{ border: `3px solid ${WOOD_MID}`, background: WOOD_MID }}>
+          <div style={{ border: `2px solid ${GOLD}`, background: GOLD }}>
+            <div style={{ background: PARCHMENT }}>{children}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Memories() {
   const [memories, setMemories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -32,9 +86,21 @@ function Memories() {
   // ── Loading state ──
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#071a18] flex flex-col items-center justify-center gap-4">
-        <p className="text-teal-500/50 text-2xl animate-pulse">✦</p>
-        <p className="font-serif italic text-teal-100/40 text-sm tracking-widest">
+      <div
+        style={{
+          minHeight: "100vh",
+          background: `linear-gradient(180deg, ${BG_GREEN} 0%, ${BG_GREEN_DARK} 100%)`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "16px",
+        }}
+      >
+        <p style={{ fontFamily: pixelFont, fontSize: "20px", color: GOLD, opacity: 0.7, animation: "pulse 1.5s infinite" }}>
+          ✦
+        </p>
+        <p style={{ fontFamily: pixelFont, fontSize: "10px", color: PARCHMENT, opacity: 0.6, letterSpacing: "2px" }}>
           loading memories...
         </p>
       </div>
@@ -42,93 +108,169 @@ function Memories() {
   }
 
   return (
-    <div className="min-h-screen bg-[#071a18] font-serif">
-
+    <div
+      style={{
+        minHeight: "100vh",
+        background: `linear-gradient(180deg, ${BG_GREEN} 0%, ${BG_GREEN_DARK} 100%)`,
+        fontFamily: pixelFont,
+        backgroundImage: `
+          repeating-linear-gradient(0deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 2px, transparent 2px, transparent 4px),
+          repeating-linear-gradient(90deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 2px, transparent 2px, transparent 4px)
+        `,
+      }}
+    >
       {/* ── HEADER ── */}
-      <div className="relative text-center pt-10 pb-6 px-6">
+      <div style={{ position: "relative", textAlign: "center", paddingTop: "40px", paddingBottom: "24px", paddingLeft: "24px", paddingRight: "24px" }}>
         <Link
           to="/"
-          className="absolute left-5 top-10 text-teal-500/50 hover:text-teal-400 text-[11px] tracking-widest uppercase no-underline transition-colors"
+          style={{
+            position: "absolute",
+            left: "20px",
+            top: "40px",
+            color: GOLD,
+            opacity: 0.7,
+            fontSize: "9px",
+            letterSpacing: "1px",
+            textTransform: "uppercase",
+            textDecoration: "none",
+            fontFamily: pixelFont,
+          }}
         >
           ← home
         </Link>
 
-        <p className="text-[10px] tracking-[8px] text-teal-500/70 mb-3">
+        <p style={{ fontSize: "10px", letterSpacing: "8px", color: GOLD, opacity: 0.8, marginBottom: "14px" }}>
           ✦ &nbsp; ✦ &nbsp; ✦
         </p>
-        <h1 className="font-serif italic font-normal text-3xl text-teal-50 tracking-wide m-0">
-          Memories
-        </h1>
-        <div className="flex items-center gap-2 justify-center my-3 max-w-xs mx-auto">
-          <div className="flex-1 h-px bg-teal-500/25" />
-          <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-          <p className="italic text-[11px] text-teal-100/40 tracking-wide m-0 whitespace-nowrap">
-            moments we've collected
-          </p>
-          <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-          <div className="flex-1 h-px bg-teal-500/25" />
+
+        <div style={{ display: "inline-block", position: "relative" }}>
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              translate: "3px 3px",
+              background: WOOD_DARK,
+              opacity: 0.6,
+              zIndex: 0,
+            }}
+          />
+          <h1
+            style={{
+              position: "relative",
+              zIndex: 1,
+              fontFamily: pixelFont,
+              fontSize: "22px",
+              color: GOLD_LIGHT,
+              letterSpacing: "3px",
+              margin: 0,
+              padding: "10px 20px",
+              border: `3px solid ${GOLD}`,
+              background: WOOD_DARK,
+              textShadow: `2px 2px 0 ${WOOD_DARK}`,
+            }}
+          >
+            MEMORIES
+          </h1>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", justifyContent: "center", margin: "18px auto 0", maxWidth: "320px" }}>
+          <div style={{ flex: 1, height: "2px", background: WOOD_LIGHT, opacity: 0.5 }} />
+          <div style={{ width: "6px", height: "6px", background: GOLD, transform: "rotate(45deg)", flexShrink: 0 }} />
+          
+          <div style={{ width: "6px", height: "6px", background: GOLD, transform: "rotate(45deg)", flexShrink: 0 }} />
+          <div style={{ flex: 1, height: "2px", background: WOOD_LIGHT, opacity: 0.5 }} />
         </div>
       </div>
 
       {/* ── SEARCH + ADD ── */}
-      <div className="flex items-center gap-3 px-5 max-w-2xl mx-auto mb-7">
-
-        {/* Search bar */}
-        <div className="relative flex-1">
-          <svg
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-teal-500/50"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="M21 21l-4.35-4.35" />
-          </svg>
-          <input
-            type="text"
-            placeholder="search memories..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="
-              w-full bg-teal-900/15 border border-teal-700/25 rounded-lg
-              pl-9 pr-4 py-2.5 text-sm text-teal-100 placeholder-teal-500/40
-              focus:outline-none focus:border-teal-500/50 italic tracking-wide font-serif
-            "
-          />
+      <div style={{ display: "flex", alignItems: "stretch", gap: "12px", padding: "0 20px", maxWidth: "720px", margin: "0 auto 32px" }}>
+        {/* Search bar — parchment scroll input */}
+        <div style={{ position: "relative", flex: 1 }}>
+          <WoodPanel>
+            <div style={{ display: "flex", alignItems: "center", padding: "10px 12px" }}>
+              <span style={{ color: WOOD_MID, marginRight: "8px", fontSize: "12px" }}>🔍</span>
+              <input
+                type="text"
+                placeholder="i dont even know if ts works"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                style={{
+                  flex: 1,
+                  background: "transparent",
+                  border: "none",
+                  outline: "none",
+                  fontFamily: pixelFont,
+                  fontSize: "9px",
+                  color: INK,
+                  letterSpacing: "0.5px",
+                }}
+              />
+            </div>
+          </WoodPanel>
         </div>
 
-        {/* Add memory — same Link as your original, just styled */}
+        {/* Add memory button — gold wooden sign button */}
         <Link
           to="/memories/add"
-          className="
-            flex items-center gap-2 no-underline
-            bg-teal-800/30 hover:bg-teal-700/40
-            border border-teal-600/30 hover:border-teal-500/50
-            text-teal-300 text-[12px] italic tracking-wide
-            px-4 py-2.5 rounded-lg transition-all duration-200 whitespace-nowrap font-serif
-          "
+          style={{
+            textDecoration: "none",
+            position: "relative",
+            flexShrink: 0,
+          }}
         >
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M12 5v14M5 12h14" />
-          </svg>
-          add memory
+          <div style={{ position: "relative" }}>
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                translate: "3px 3px",
+                background: WOOD_DARK,
+                opacity: 0.7,
+                borderRadius: "2px",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                zIndex: 1,
+                border: `3px solid ${WOOD_DARK}`,
+                background: `linear-gradient(180deg, ${GOLD_LIGHT}, ${GOLD})`,
+                padding: "12px 18px",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                whiteSpace: "nowrap",
+                borderRadius: "2px",
+              }}
+            >
+              <span style={{ fontFamily: pixelFont, fontSize: "12px", color: WOOD_DARK, fontWeight: "bold" }}>+</span>
+              <span style={{ fontFamily: pixelFont, fontSize: "9px", color: WOOD_DARK, letterSpacing: "0.5px" }}>
+                add kand or love
+              </span>
+            </div>
+          </div>
         </Link>
       </div>
 
-      {/* ── PINTEREST GRID ── */}
-      <div className="px-5 pb-16 max-w-2xl mx-auto">
+      {/* ── GRID ── */}
+      <div style={{ padding: "0 20px 60px", maxWidth: "760px", margin: "0 auto" }}>
         {filtered.length === 0 ? (
-          <div className="text-center py-20">
-            <p className="text-4xl mb-4 opacity-30">✦</p>
-            <p className="font-serif italic text-teal-100/30 text-lg">
-              no memories found
-            </p>
-            <p className="text-teal-500/30 text-xs tracking-widest mt-2">
-              try a different search
+          <div style={{ textAlign: "center", padding: "80px 20px" }}>
+            <p style={{ fontSize: "32px", opacity: 0.3, marginBottom: "16px" }}>✦</p>
+            
+            <p style={{ fontFamily: pixelFont, fontSize: "8px", color: GOLD, opacity: 1, marginTop: "10px", letterSpacing: "1px" }}>
+              wanna add these w you
             </p>
           </div>
         ) : (
-          <div className="columns-2 gap-3">
+          <div
+            style={{
+              columnCount: 2,
+              columnGap: "14px",
+            }}
+          >
             {filtered.map((memory) => (
-              <div key={memory.id} className="break-inside-avoid mb-3">
+              <div key={memory.id} style={{ breakInsideAvoid: "avoid", marginBottom: "14px" }}>
                 <MemoryCard memory={memory} />
               </div>
             ))}
@@ -137,10 +279,18 @@ function Memories() {
       </div>
 
       {/* ── FOOTER ── */}
-      <p className="text-center pb-10 italic text-[11px] text-teal-500/30 tracking-wide">
-        {memories.length} memories &nbsp;✦&nbsp; and counting
-      </p>
+      <div style={{ textAlign: "center", paddingBottom: "40px" }}>
+        <p style={{ fontFamily: pixelFont, fontSize: "8px", color: GOLD, opacity: 0.9, letterSpacing: "1px" }}>
+          {memories.length} i love you so muchhhhhhhhhhhhhh
+        </p>
+      </div>
 
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 0.7; }
+          50% { opacity: 0.2; }
+        }
+      `}</style>
     </div>
   );
 }

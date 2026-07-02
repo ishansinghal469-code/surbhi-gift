@@ -56,7 +56,7 @@ function AddTask() {
           <div className="flex-1 h-px bg-teal-500/25" />
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <p className="italic text-[11px] text-teal-100/40 tracking-wide m-0 whitespace-nowrap">
-            something to get done
+            add you tasks
           </p>
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <div className="flex-1 h-px bg-teal-500/25" />
@@ -77,7 +77,7 @@ function AddTask() {
           {/* Day Manager ID */}
           <div className="flex flex-col gap-1.5">
             <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              day manager id
+              just give some id for the backend(like 1 2 3) i myself dont know why this field is here
             </label>
             <input
               type="number"

@@ -106,7 +106,6 @@ class LoveLetter(models.Model):
     
 class TarotCard(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='tarot_cards/')
     meaning_upright = models.TextField()
     meaning_reversed = models.TextField()
     suit = models.CharField(max_length=50, blank=True)

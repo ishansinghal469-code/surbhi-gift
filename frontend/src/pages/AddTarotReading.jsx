@@ -50,7 +50,7 @@ function AddTarotReading() {
       <div className="mx-auto max-w-2xl px-6 py-16">
         <div className="mb-10 text-center">
           <p className="mb-2 text-[10px] uppercase tracking-[0.3em] text-amber-400/50">
-            draw and record
+            please trust me i believe in it
           </p>
           <h1 className="font-serif italic text-4xl tracking-wide text-amber-100">
             Add Tarot Reading

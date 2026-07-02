@@ -34,10 +34,10 @@ function LoveLetters() {
       {/* header */}
       <div className="pt-14 pb-6 text-center px-6">
         <h1 className="text-3xl font-bold text-gray-800 leading-tight">
-          Notes
+          Words 
         </h1>
         <p className="text-sm text-gray-400 mt-1 tracking-wide">
-          little thoughts, saved
+          this page is named love letters in my code i dont know what was i thinking naming it hahahahaha use it as notes app as you like to write
         </p>
       </div>
 
@@ -79,7 +79,7 @@ function LoveLetters() {
 
         {letters.length === 0 && (
           <p className="text-center text-sm text-gray-400 mt-10">
-            No notes yet — add your first one.
+            hwwwwww deleted the poem i wrote you are actually evil
           </p>
         )}
       </div>

@@ -304,7 +304,7 @@ export default function Home() {
         </div>
 
         <p className="text-center mt-10 italic text-[12px] text-teal-500/35 tracking-wide">
-          made with love 
+          this thing was so hard to make i love you a lot , i hope you like it 
         </p>
       </div>
     </div>

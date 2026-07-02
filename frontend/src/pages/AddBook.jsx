@@ -37,32 +37,33 @@ function AddBook() {
   };
 
   return (
-    <div className="min-h-screen bg-[#071a18] font-serif flex flex-col">
+    <div className="min-h-screen bg-black flex flex-col">
 
-      {/* ── HEADER ── */}
-      <div className="relative text-center pt-10 pb-6 px-6">
-        <Link
-          to="/books"
-          className="absolute left-5 top-10 text-teal-500/50 hover:text-teal-400 text-[11px] tracking-widest uppercase no-underline transition-colors"
-        >
-          ← back
-        </Link>
+      {/* ── TOP BAR ── */}
+      <div className="sticky top-0 z-20 bg-black/95 backdrop-blur-sm border-b border-gray-800">
+        <div className="flex items-center gap-4 px-5 py-3 max-w-3xl mx-auto">
+          <Link
+            to="/books"
+            className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800 transition-colors shrink-0 no-underline"
+          >
+            <svg className="w-5 h-5 text-gray-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </Link>
+          <span className="text-gray-100 text-sm font-semibold">
+            Add a book
+          </span>
+        </div>
+      </div>
 
-        <p className="text-[10px] tracking-[8px] text-teal-500/70 mb-3">
-          ✦ &nbsp; ✦ &nbsp; ✦
-        </p>
-        <h1 className="font-serif italic font-normal text-3xl text-teal-50 tracking-wide m-0">
+      {/* ── PAGE TITLE ── */}
+      <div className="text-center pt-10 pb-6 px-6">
+        <h1 className="text-2xl font-semibold text-gray-50 m-0">
           Add a Book
         </h1>
-        <div className="flex items-center gap-2 justify-center my-3 max-w-xs mx-auto">
-          <div className="flex-1 h-px bg-teal-500/25" />
-          <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-          <p className="italic text-[11px] text-teal-100/40 tracking-wide m-0 whitespace-nowrap">
-            for her shelf
-          </p>
-          <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-          <div className="flex-1 h-px bg-teal-500/25" />
-        </div>
+        <p className="text-gray-500 text-sm mt-1.5">
+          for your shelf
+        </p>
       </div>
 
       {/* ── FORM ── */}
@@ -71,74 +72,74 @@ function AddBook() {
 
           {/* Error */}
           {error && (
-            <div className="bg-red-900/20 border border-red-500/30 rounded-lg px-4 py-3">
-              <p className="text-red-300/80 text-sm italic">{error}</p>
+            <div className="bg-red-500/10 border border-red-500/30 rounded-xl px-4 py-3">
+              <p className="text-red-400 text-sm">{error}</p>
             </div>
           )}
 
           {/* Title */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              title
+            <label className="text-xs font-semibold text-gray-400">
+              Title
             </label>
             <input
               type="text"
-              placeholder="the name of the book..."
+              placeholder="The name of the book"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               required
               className="
-                bg-teal-900/15 border border-teal-700/25 rounded-lg
-                px-4 py-3 text-sm text-teal-100 placeholder-teal-500/35
-                focus:outline-none focus:border-teal-500/50
-                italic tracking-wide font-serif transition-colors
+                bg-gray-900 border border-gray-800 rounded-xl
+                px-4 py-3 text-sm text-gray-100 placeholder-gray-600
+                focus:outline-none focus:border-gray-600 focus:bg-gray-800
+                transition-colors
               "
             />
           </div>
 
           {/* Author */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              author
+            <label className="text-xs font-semibold text-gray-400">
+              Author
             </label>
             <input
               type="text"
-              placeholder="who wrote it..."
+              placeholder="Who wrote it"
               value={author}
               onChange={(e) => setAuthor(e.target.value)}
               required
               className="
-                bg-teal-900/15 border border-teal-700/25 rounded-lg
-                px-4 py-3 text-sm text-teal-100 placeholder-teal-500/35
-                focus:outline-none focus:border-teal-500/50
-                italic tracking-wide font-serif transition-colors
+                bg-gray-900 border border-gray-800 rounded-xl
+                px-4 py-3 text-sm text-gray-100 placeholder-gray-600
+                focus:outline-none focus:border-gray-600 focus:bg-gray-800
+                transition-colors
               "
             />
           </div>
 
           {/* Description */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              description
+            <label className="text-xs font-semibold text-gray-400">
+              Description
             </label>
             <textarea
-              placeholder="what it's about, or what she thought of it..."
+              placeholder="What it's about, or what she thought of it"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               rows={4}
               className="
-                bg-teal-900/15 border border-teal-700/25 rounded-lg
-                px-4 py-3 text-sm text-teal-100 placeholder-teal-500/35
-                focus:outline-none focus:border-teal-500/50
-                italic tracking-wide font-serif resize-none transition-colors
+                bg-gray-900 border border-gray-800 rounded-xl
+                px-4 py-3 text-sm text-gray-100 placeholder-gray-600
+                focus:outline-none focus:border-gray-600 focus:bg-gray-800
+                resize-none transition-colors
               "
             />
           </div>
 
           {/* Rating */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              rating
+            <label className="text-xs font-semibold text-gray-400">
+              dont exceed rating more than 5 site will crash!
             </label>
             <div className="flex items-center gap-3">
               <input
@@ -148,44 +149,46 @@ function AddBook() {
                 value={rating}
                 onChange={(e) => setRating(e.target.value)}
                 className="
-                  w-20 bg-teal-900/15 border border-teal-700/25 rounded-lg
-                  px-3 py-3 text-sm text-teal-100 text-center
-                  focus:outline-none focus:border-teal-500/50
-                  italic font-serif transition-colors
+                  w-20 bg-gray-900 border border-gray-800 rounded-xl
+                  px-3 py-3 text-sm text-gray-100 text-center
+                  focus:outline-none focus:border-gray-600 focus:bg-gray-800
+                  transition-colors
                 "
               />
-              <span className="text-amber-400/70 text-lg">
-                {"★".repeat(Math.round(rating))}
-                <span className="text-teal-700/30">
+              <span className="text-lg">
+                <span className="text-amber-400">
+                  {"★".repeat(Math.round(rating))}
+                </span>
+                <span className="text-gray-700">
                   {"★".repeat(5 - Math.round(rating))}
                 </span>
               </span>
-              <span className="text-teal-500/40 text-xs">/ 5</span>
+              <span className="text-gray-500 text-xs">/ 5</span>
             </div>
           </div>
 
           {/* Cover image */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] tracking-[0.14em] uppercase text-teal-500/60">
-              cover image
+            <label className="text-xs font-semibold text-gray-400">
+              Cover image
             </label>
             <label className="
               relative flex items-center gap-3 cursor-pointer
-              bg-teal-900/15 border border-dashed border-teal-700/30
-              hover:border-teal-500/50 hover:bg-teal-900/25
-              rounded-lg px-4 py-4 transition-all duration-200
+              bg-gray-900 border border-dashed border-gray-700
+              hover:border-gray-500 hover:bg-gray-800
+              rounded-xl px-4 py-4 transition-all duration-200
             ">
-              <svg className="w-5 h-5 text-teal-500/50 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+              <svg className="w-5 h-5 text-gray-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                 <circle cx="8.5" cy="8.5" r="1.5"/>
                 <path d="M21 15l-5-5L5 21"/>
               </svg>
               <div className="flex flex-col">
-                <span className="text-teal-100/50 text-sm italic">
-                  {coverImage ? coverImage.name : "choose a cover..."}
+                <span className="text-gray-300 text-sm">
+                  {coverImage ? coverImage.name : "Choose a cover"}
                 </span>
-                <span className="text-teal-500/35 text-[10px] tracking-wide mt-0.5">
-                  jpg, png, webp
+                <span className="text-gray-600 text-xs mt-0.5">
+                  everything works thb
                 </span>
               </div>
               <input
@@ -201,32 +204,27 @@ function AddBook() {
               <img
                 src={URL.createObjectURL(coverImage)}
                 alt="cover preview"
-                className="w-24 aspect-[2/3] object-cover rounded-lg border border-teal-700/30 mt-1"
+                className="w-24 aspect-[2/3] object-cover rounded-xl mt-1"
               />
             )}
           </div>
 
           {/* Divider */}
-          <div className="flex items-center gap-3 my-1">
-            <div className="flex-1 h-px bg-teal-500/15" />
-            <div className="w-1 h-1 bg-teal-500/30 rotate-45" />
-            <div className="flex-1 h-px bg-teal-500/15" />
-          </div>
+          <div className="h-px bg-gray-800 my-1" />
 
           {/* Submit */}
           <button
             type="submit"
             disabled={submitting}
             className="
-              w-full py-3 rounded-lg font-serif italic tracking-wide text-sm
-              border transition-all duration-200
+              w-full py-3 rounded-full text-sm font-semibold
+              transition-colors duration-200
               disabled:opacity-50 disabled:cursor-not-allowed
-              bg-teal-800/40 hover:bg-teal-700/50
-              border-teal-600/40 hover:border-teal-500/60
-              text-teal-200 hover:text-teal-50
+              bg-red-600 hover:bg-red-700
+              text-white
             "
           >
-            {submitting ? "adding to shelf..." : "✦ add to her shelf"}
+            {submitting ? "Adding to shelf..." : "Add to her shelf"}
           </button>
 
         </form>

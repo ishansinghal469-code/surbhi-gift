@@ -16,73 +16,85 @@ function BookDetail() {
     // ── Loading ──
     if (!book) {
         return (
-            <div className="min-h-screen bg-[#071a18] flex flex-col items-center justify-center gap-4">
-                <p className="text-teal-500/50 text-2xl animate-pulse">✦</p>
-                <p className="font-serif italic text-teal-100/40 text-sm tracking-widest">
-                    opening this book...
-                </p>
+            <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4">
+                <div className="w-8 h-8 border-2 border-gray-700 border-t-red-500 rounded-full animate-spin" />
+                <p className="text-gray-500 text-sm tracking-wide">opening this book...</p>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-[#071a18] font-serif">
+        <div className="min-h-screen bg-black">
 
-            {/* ── HEADER ── */}
-            <div className="relative text-center pt-10 pb-4 px-6">
-                <Link
-                    to="/books"
-                    className="absolute left-5 top-10 text-teal-500/50 hover:text-teal-400 text-[11px] tracking-widest uppercase no-underline transition-colors"
-                >
-                    ← back
-                </Link>
-                <p className="text-[10px] tracking-[8px] text-teal-500/70 mb-3">
-                    ✦ &nbsp; ✦ &nbsp; ✦
-                </p>
+            {/* ── TOP BAR ── */}
+            <div className="sticky top-0 z-20 bg-black/95 backdrop-blur-sm border-b border-gray-800">
+                <div className="flex items-center gap-4 px-5 py-3 max-w-6xl mx-auto">
+                    <Link
+                        to="/books"
+                        className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800 transition-colors shrink-0 no-underline"
+                    >
+                        <svg className="w-5 h-5 text-gray-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                    </Link>
+                    <span className="text-gray-300 text-sm font-medium truncate">
+                        {book.title}
+                    </span>
+                </div>
             </div>
 
             {/* ── CONTENT ── */}
-            <div className="px-5 pb-20 max-w-xl mx-auto flex flex-col items-center gap-6">
+            <div className="px-5 pb-20 pt-10 max-w-xl mx-auto flex flex-col items-center gap-6">
 
                 {/* ── Cover image ── */}
-                {book.cover_image && (
+                {book.cover_image ? (
                     <img
                         src={book.cover_image}
                         alt={book.title}
-                        className="w-40 aspect-[2/3] object-cover rounded-lg border border-teal-700/25 shadow-lg shadow-teal-950/40"
+                        className="w-44 aspect-[2/3] object-cover rounded-2xl shadow-2xl shadow-black/60"
                     />
+                ) : (
+                    <div className="w-44 aspect-[2/3] rounded-2xl bg-gray-900 border border-gray-800 flex flex-col items-center justify-center gap-2">
+                        <svg className="w-8 h-8 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                        <p className="text-[10px] tracking-[3px] text-gray-600 uppercase">no cover</p>
+                    </div>
                 )}
 
                 {/* ── Title + author ── */}
                 <div className="text-center">
-                    <h1 className="font-serif italic font-normal text-3xl text-teal-50 tracking-wide leading-snug mb-2">
+                    <h1 className="text-2xl font-semibold text-gray-50 leading-snug mb-1.5">
                         {book.title}
                     </h1>
-                    <p className="text-teal-100/50 text-sm tracking-wide">
+                    <p className="text-gray-500 text-sm">
                         by {book.author}
                     </p>
                 </div>
 
                 {/* ── Genre + rating row ── */}
-                <div className="flex items-center gap-4 flex-wrap justify-center">
+                <div className="flex items-center gap-3 flex-wrap justify-center">
                     {book.genre && (
                         <span className="
-              text-[10px] tracking-[0.1em] uppercase
-              text-teal-300/70 bg-teal-900/25
-              border border-teal-700/25 rounded-full
-              px-3 py-1
+              text-xs font-medium
+              text-gray-300 bg-gray-900
+              border border-gray-800 rounded-full
+              px-3 py-1.5
             ">
                             {book.genre}
                         </span>
                     )}
 
                     {Number.isInteger(book.rating) && (
-                        <span className="text-amber-400/70 text-sm flex items-center gap-1">
-                            {"★".repeat(book.rating)}
-                            <span className="text-teal-700/30">
+                        <span className="text-sm flex items-center gap-1 bg-gray-900 border border-gray-800 rounded-full px-3 py-1.5">
+                            <span className="text-amber-400">
+                                {"★".repeat(book.rating)}
+                            </span>
+                            <span className="text-gray-700">
                                 {"★".repeat(5 - book.rating)}
                             </span>
-                            <span className="text-teal-500/40 text-xs ml-1">
+                            <span className="text-gray-500 text-xs ml-1">
                                 {book.rating}/5
                             </span>
                         </span>
@@ -90,15 +102,11 @@ function BookDetail() {
                 </div>
 
                 {/* ── Divider ── */}
-                <div className="flex items-center gap-2 w-full max-w-xs">
-                    <div className="flex-1 h-px bg-teal-500/20" />
-                    <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
-                    <div className="flex-1 h-px bg-teal-500/20" />
-                </div>
+                <div className="w-full max-w-xs h-px bg-gray-800" />
 
                 {/* ── Description ── */}
                 {book.description && (
-                    <p className="text-teal-100/60 text-sm leading-relaxed text-center italic">
+                    <p className="text-gray-400 text-sm leading-relaxed text-center">
                         {book.description}
                     </p>
                 )}
@@ -106,27 +114,30 @@ function BookDetail() {
                 {/* ── Her review ── */}
                 {book.review && (
                     <div className="w-full">
-                        <p className="text-[10px] tracking-[0.14em] uppercase text-teal-500/50 mb-3 text-center">
+                        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-3 text-center">
                             her thoughts
                         </p>
                         <div className="
-              relative bg-teal-900/15 border border-teal-700/20
-              rounded-xl px-5 py-5
+              relative bg-gray-900 border border-gray-800
+              rounded-2xl px-5 py-6
             ">
-                            <span className="absolute top-2 left-3 text-teal-600/30 text-3xl font-serif">"</span>
-                            <p className="text-teal-100/70 text-sm leading-relaxed italic text-center px-3">
+                            <span className="absolute top-2 left-4 text-gray-700 text-3xl font-serif">"</span>
+                            <p className="text-gray-300 text-sm leading-relaxed text-center px-3">
                                 {book.review}
                             </p>
-                            <span className="absolute bottom-0 right-3 text-teal-600/30 text-3xl font-serif">"</span>
+                            <span className="absolute bottom-1 right-4 text-gray-700 text-3xl font-serif">"</span>
                         </div>
                     </div>
                 )}
 
                 {/* No-content fallback */}
                 {!book.description && !book.review && (
-                    <div className="text-center py-6 border border-dashed border-teal-700/20 rounded-xl w-full">
-                        <p className="text-teal-500/30 text-xl mb-2">✦</p>
-                        <p className="font-serif italic text-teal-100/25 text-sm">
+                    <div className="text-center py-8 border border-dashed border-gray-800 rounded-2xl w-full">
+                        <svg className="w-6 h-6 text-gray-700 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                        <p className="text-gray-500 text-sm">
                             no notes on this one yet
                         </p>
                     </div>
@@ -136,14 +147,13 @@ function BookDetail() {
                 <Link
                     to="/books"
                     className="
-            no-underline text-center w-full py-3 rounded-lg font-serif italic
-            tracking-wide text-sm border transition-all duration-200
-            bg-teal-900/20 hover:bg-teal-800/30
-            border-teal-700/25 hover:border-teal-500/40
-            text-teal-300/70 hover:text-teal-200 mt-2
+            no-underline text-center w-full py-3 rounded-full text-sm font-semibold
+            transition-colors duration-200
+            bg-red-600 hover:bg-red-700
+            text-white mt-2
           "
                 >
-                    ← back to library
+                    ← Back to library
                 </Link>
 
             </div>

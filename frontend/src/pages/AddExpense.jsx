@@ -66,7 +66,7 @@ function AddExpense() {
           <div className="flex-1 h-px bg-teal-500/25" />
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <p className="italic text-[11px] text-teal-100/40 tracking-wide m-0 whitespace-nowrap">
-            keeping track, together
+            keep the track of yoyr expenses babe
           </p>
           <div className="w-1.5 h-1.5 bg-teal-500 rotate-45 shrink-0" />
           <div className="flex-1 h-px bg-teal-500/25" />

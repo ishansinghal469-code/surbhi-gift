@@ -31,7 +31,7 @@ function Tarot() {
       <div className="mx-auto max-w-3xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="mb-2 text-[10px] uppercase tracking-[0.3em] text-amber-400/50">
-            the cards speak
+            i genuienly believe in it 
           </p>
           <h1 className="font-serif italic text-4xl tracking-wide text-amber-100">
             Tarot Readings
@@ -76,11 +76,6 @@ function Tarot() {
                     className="overflow-hidden rounded-md border border-amber-500/20 bg-[#1c140b]/80"
                   >
                     <div className="relative">
-                      <img
-                        src={card.image}
-                        alt={card.name}
-                        className="w-full object-cover"
-                      />
                       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1c140b]/80 via-transparent to-amber-900/10" />
                     </div>
 
@@ -118,6 +113,11 @@ function Tarot() {
           ))}
         </div>
       </div>
+      {readings.length === 0 && (
+          <p className="text-center text-sm text-gray-400 mt-10">
+            what were you expecting add them youself and remember i believe in it
+          </p>
+        )}
     </TarotBackground>
   );
 }

@@ -161,7 +161,7 @@ function ExpenseDetail() {
         ) : (
           <div className="w-full flex flex-col gap-2">
             <p className="text-center text-teal-100/50 text-xs italic mb-1">
-              are you sure? this can't be undone
+              look two step authentication and delete button man
             </p>
             <div className="flex gap-3">
               <button

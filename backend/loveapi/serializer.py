@@ -43,12 +43,14 @@ class TarotCardSerializer(serializers.ModelSerializer):
         model = TarotCard
         fields = '__all__'
 
+
 class TarotReadingSerializer(serializers.ModelSerializer):
     cards = TarotCardSerializer(many=True, read_only=True)
+
     class Meta:
         model = TarotReading
-        fields = '__all__'
-
+        fields = "__all__"
+        
 class PhotoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Photo

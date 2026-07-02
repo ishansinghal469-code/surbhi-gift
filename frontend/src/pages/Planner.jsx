@@ -38,7 +38,7 @@ function Planner() {
       <div className="min-h-screen bg-[#071a18] flex flex-col items-center justify-center gap-4">
         <p className="text-teal-500/50 text-2xl animate-pulse">✦</p>
         <p className="font-serif italic text-teal-100/40 text-sm tracking-widest">
-          opening the planner...
+            wait bihhhh
         </p>
       </div>
     );
@@ -131,7 +131,7 @@ function Planner() {
             <div className="text-center py-10 border border-dashed border-teal-700/20 rounded-xl">
               <p className="text-teal-500/30 text-xl mb-2">✦</p>
               <p className="font-serif italic text-teal-100/25 text-sm">
-                no schedule for today
+                 wtfff do something dont waste the day
               </p>
             </div>
           ) : (
@@ -166,7 +166,7 @@ function Planner() {
             <div className="text-center py-10 border border-dashed border-teal-700/20 rounded-xl">
               <p className="text-teal-500/30 text-xl mb-2">✦</p>
               <p className="font-serif italic text-teal-100/25 text-sm">
-                no tasks yet
+                no tasks huh chill day
               </p>
             </div>
           ) : (
@@ -186,7 +186,7 @@ function Planner() {
 
       {/* ── FOOTER ── */}
       <p className="text-center pb-10 italic text-[11px] text-teal-500/30 tracking-wide">
-        plan the day &nbsp;✦&nbsp; enjoy the moment
+        as you like planning didnt design this page alag coz bohot time lgra tha :(
       </p>
 
     </div>

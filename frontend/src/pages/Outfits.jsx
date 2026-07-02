@@ -38,7 +38,7 @@ function Outfits() {
             Outfits
           </h1>
           <p className="font-['Lora'] italic text-sm text-[#7a5a38] opacity-85">
-            a little collection of outfits, gathered like pages in a storybook
+            i wanted this page to be so much better but all other things were already taking so much time ill improve this page later babe
           </p>
           <div className="mx-auto mt-3 h-[2px] w-16 rounded-full"
             style={{background:"linear-gradient(90deg,transparent,#a33828,transparent)"}} />
@@ -63,7 +63,7 @@ function Outfits() {
           </div>
         ) : (
           <p className="font-['Lora'] italic text-center text-[#7a5a38] opacity-70 mt-20">
-            Your lookbook is waiting to be filled...
+            I haven't added anything do some shi youself
           </p>
         )}
       </div>
