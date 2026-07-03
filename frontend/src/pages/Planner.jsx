@@ -12,8 +12,8 @@ function Planner() {
 
   useEffect(() => {
     Promise.all([
-      axios.get("http://127.0.0.1:8000/api/daymanager/"),
-      axios.get("http://127.0.0.1:8000/api/tasks/"),
+      axios.get("https://surbhi-gift.onrender.com/api/daymanager/"),
+      axios.get("https://surbhi-gift.onrender.com/api/tasks/"),
     ])
       .then(([dayResponse, taskResponse]) => {
         setDays(dayResponse.data);
@@ -25,7 +25,7 @@ function Planner() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/tasks/${id}/`);
+      await axios.delete(`https://surbhi-gift.onrender.com/api/tasks/${id}/`);
       setTasks(tasks.filter((task) => task.id !== id));
     } catch (error) {
       console.log(error);

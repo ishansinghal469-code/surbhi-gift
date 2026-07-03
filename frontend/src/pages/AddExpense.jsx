@@ -19,7 +19,7 @@ function AddExpense() {
     setError(null);
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/expenses/", {
+      await axios.post("https://surbhi-gift.onrender.com/api/expenses/", {
         title,
         amount,
         category,

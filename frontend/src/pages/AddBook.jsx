@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import API from "../services/api";
 import { useNavigate, Link } from "react-router-dom";
 
 function AddBook() {
@@ -26,7 +26,7 @@ function AddBook() {
     formData.append("cover_image", coverImage);
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/books/", formData);
+      await API.post("books/", formData);
       navigate("/books");
     } catch (error) {
       console.log(error.response?.data);

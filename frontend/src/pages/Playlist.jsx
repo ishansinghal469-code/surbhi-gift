@@ -10,7 +10,7 @@ function Playlists() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/playlists/")
+      .get("https://surbhi-gift.onrender.com/api/playlists/")
       .then((response) => setPlaylists(response.data))
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));

@@ -39,7 +39,7 @@ function AddDayManager() {
     setError(null);
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/daymanager/", {
+      await axios.post("https://surbhi-gift.onrender.com/api/daymanager/", {
         title,
         description,
         start_time: startTime,

@@ -10,7 +10,7 @@ function Tarot() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/tarotreadings/")
+      .get("https://surbhi-gift.onrender.com/api/tarotreadings/")
       .then((response) => setReadings(response.data))
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));

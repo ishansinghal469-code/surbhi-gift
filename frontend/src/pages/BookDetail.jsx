@@ -8,7 +8,7 @@ function BookDetail() {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/api/books/${id}/`)
+            .get(`https://surbhi-gift.onrender.com/api/books/${id}/`)
             .then((response) => setBook(response.data))
             .catch((error) => console.log(error));
     }, [id]);

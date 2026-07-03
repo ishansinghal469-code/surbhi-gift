@@ -31,7 +31,7 @@ function LoveLetterDetail() {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/loveletters/${id}/`)
+      .get(`https://surbhi-gift.onrender.com/api/loveletters/${id}/`)
       .then((res) => setLetter(res.data))
       .catch((err) => console.log(err));
   }, [id]);

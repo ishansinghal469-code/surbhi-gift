@@ -16,7 +16,7 @@ function AddOutfit() {
     formData.append("description", description);
     formData.append("image", image);
     try {
-      await axios.post("http://127.0.0.1:8000/api/outfits/", formData, {
+      await axios.post("https://surbhi-gift.onrender.com/api/outfits/", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       navigate("/outfits");

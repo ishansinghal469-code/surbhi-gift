@@ -24,7 +24,7 @@ function ExpenseDetail() {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/expenses/${id}/`)
+      .get(`https://surbhi-gift.onrender.com/api/expenses/${id}/`)
       .then((response) => setExpense(response.data))
       .catch((error) => console.log(error));
   }, [id]);
@@ -33,7 +33,7 @@ function ExpenseDetail() {
     setDeleting(true);
     setError(null);
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/expenses/${id}/`);
+      await axios.delete(`https://surbhi-gift.onrender.com/api/expenses/${id}/`);
       navigate("/expenses");
     } catch (error) {
       console.log(error);

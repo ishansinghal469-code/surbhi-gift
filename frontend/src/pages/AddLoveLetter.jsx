@@ -19,7 +19,7 @@ function AddLoveLetter() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://127.0.0.1:8000/api/loveletters/", {
+      await axios.post("https://surbhi-gift.onrender.com/api/loveletters/", {
         title,
         message,
       });

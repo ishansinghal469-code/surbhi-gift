@@ -13,7 +13,7 @@ function AddTarotReading() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/tarotcards/")
+      .get("https://surbhi-gift.onrender.com/api/tarotcards/")
       .then((response) => setCards(response.data))
       .catch((error) => console.log(error));
   }, []);
@@ -30,7 +30,7 @@ function AddTarotReading() {
     e.preventDefault();
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/tarotreadings/", {
+      await axios.post("https://surbhi-gift.onrender.com/api/tarotreadings/", {
         question,
         interpretation,
         cards: selectedCards,

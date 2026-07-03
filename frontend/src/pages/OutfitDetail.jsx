@@ -8,7 +8,7 @@ function OutfitDetail() {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/outfits/${id}/`)
+      .get(`https://surbhi-gift.onrender.com/api/outfits/${id}/`)
       .then((res) => setOutfit(res.data))
       .catch((err) => console.log(err));
   }, [id]);

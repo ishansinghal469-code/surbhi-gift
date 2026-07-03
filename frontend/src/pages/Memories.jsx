@@ -65,7 +65,7 @@ function Memories() {
   useEffect(() => {
     const fetchMemories = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/memories/");
+        const response = await axios.get("https://surbhi-gift.onrender.com/api/memories/");
         setMemories(response.data);
       } catch (error) {
         console.log(error);

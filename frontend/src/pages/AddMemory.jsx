@@ -98,7 +98,7 @@ function AddMemory() {
     try {
       // Create memory
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/memories/",
+        "https://surbhi-gift.onrender.com/api/memories/",
         { title, description, created_at: createdAt }
       );
 
@@ -109,7 +109,7 @@ function AddMemory() {
         const formData = new FormData();
         formData.append("image", photo);
         formData.append("memory", memoryId);
-        await axios.post("http://127.0.0.1:8000/api/photos/", formData);
+        await axios.post("https://surbhi-gift.onrender.com/api/photos/", formData);
       }
 
       // Upload videos
@@ -117,7 +117,7 @@ function AddMemory() {
         const formData = new FormData();
         formData.append("video_file", video);
         formData.append("memory", memoryId);
-        await axios.post("http://127.0.0.1:8000/api/videos/", formData);
+        await axios.post("https://surbhi-gift.onrender.com/api/videos/", formData);
       }
 
       navigate("/memories");
