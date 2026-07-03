@@ -1,4 +1,4 @@
-import axios from "axios";
+import API from "../services/api";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -63,7 +63,7 @@ function MemoryDetail() {
   useEffect(() => {
     const fetchMemory = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/memories/${id}/`);
+        const response = await API.get(`memories/${id}/`);
         setMemory(response.data);
       } catch (error) {
         console.error("Error fetching memory:", error);
