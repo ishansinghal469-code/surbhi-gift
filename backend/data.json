@@ -1,0 +1,1412 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-06-26T21:52:28.867Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "lord of the rings",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-06-26T21:53:13.276Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "work (2026-06-18)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-06-26T21:53:40.573Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "books - 4000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-06-26T21:53:50.796Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "i love you",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-06-26T21:54:30.877Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Photo 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-06-26T21:54:59.219Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Video 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-06-26T21:55:02.269Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "i love you",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-06-26T21:55:20.249Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "sexy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-06-26T21:55:48.991Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "test love",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-06-26T21:56:24.379Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "uhu",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-06-26T21:56:55.776Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "task test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-06-29T23:15:44.238Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "lord of the rings",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Rating\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-07-01T19:07:05.615Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "sdjhu",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-07-01T19:07:11.795Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "sjLdjef",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-07-01T19:07:17.303Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "arlf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-07-01T19:07:22.534Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "AWEIJ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-07-01T19:07:27.236Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "AWEIJ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-07-01T19:07:31.965Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "i love you",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-07-01T19:07:36.062Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "DKJ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-07-01T19:09:59.738Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "ajwd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-07-01T19:26:37.281Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "test love",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-07-01T19:26:45.582Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "slkWEKF",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-07-01T19:26:50.224Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "weifj",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-07-01T19:26:54.080Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "uhu",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-07-01T22:30:31.307Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "For you",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-07-01T22:31:20.571Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "For you",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-07-01T22:36:18.068Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Love Letter weioEWIORI",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-07-01T22:36:22.198Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Love Letter sufwioejfi",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-07-01T22:36:26.115Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Love Letter i love you",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-07-01T22:36:42.149Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "So there was stream",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-07-01T23:33:37.853Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "aefw",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-07-01T23:33:41.983Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "we",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-07-02T17:44:43.413Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "sri",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-07-02T17:44:48.376Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "lord of the rings",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-07-02T17:44:56.837Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "oejf (2026-07-01)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-07-02T17:45:01.690Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "work (2026-06-18)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-07-02T17:45:11.133Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Love Letter ljaefoewhj",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-07-02T17:45:19.933Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "ewoirj",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-07-02T17:45:24.289Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "sexy",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$QIETniF9TcMEbLptZPRdjU$e4VEO38DdEStusNMmTCvv0TGTBZwnUCD+59GrQTSOw4=",
+    "last_login": "2026-06-26T09:49:22.254Z",
+    "is_superuser": true,
+    "username": "Ishan",
+    "first_name": "",
+    "last_name": "",
+    "email": "ishansinghal469@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-26T09:48:42.202Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "egon8otva24w3hb1i04c6hegbtpy16gc",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllm_VmHkj5nsNbrDQ6gRIqTCnF3iJQC2jcz76USbWtNW5MljUVd1FmdfrdM_JBpB-VO023WPE_rMma9K_qgTfdzkef1cP8OKrX6rYHQdtkxGuxiAGELXpAcAIIxJmc_uFjEBjDRBYdkmH0RpiFawOLU-wO9vzc6:1wd3Ba:oq7AXD2yjzqWiRyyi7YEbEafNKMlk_8-BnDJuO-pjFs",
+    "expire_date": "2026-07-10T09:49:22.259Z"
+  }
+},
+{
+  "model": "loveapi.loveletter",
+  "pk": 4,
+  "fields": {
+    "message": "There was stream so fierce no one sailed it\r\nWhere ever the stream go flowers bloom\r\nStream was full of hopes full of dreams \r\nOnce a feather landed on it \r\nThe feather a stranger to the passion compasion and dreams of the stream\r\nIt followed the stream where ever it went \r\nWinds tried their best but the feather stuck as it had just been taken apart from its plume it knew no other home\r\nIt was the feather's destiny to fall from its plume into the stream\r\nThis feather wasn't the first one to be that accompanied the stream\r\nBut all the previous ones were taken away by the wind\r\nBut stream never stopped it had its goals it had its ambitions \r\nBut as all the previous feather were lost to the wind stream grew cold it does not desired to be accompanied \r\nBut the feather knows nothing it was detached from plume it fears the place the wind may take it\r\nThe winds are getting stronger as the days pass either the feather sink and becomes one with stream or being overwhelmed by the winds\r\nWhatever happens the stream will go on \r\nSo there was a stream",
+    "title": "So there was stream"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 1,
+  "fields": {
+    "name": "The Fool",
+    "meaning_upright": "New beginnings, innocence, freedom, adventure.",
+    "meaning_reversed": "Recklessness, foolishness, poor judgment.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 2,
+  "fields": {
+    "name": "The Magician",
+    "meaning_upright": "Manifestation, confidence, power, action.",
+    "meaning_reversed": "Manipulation, deception, wasted talent.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 3,
+  "fields": {
+    "name": "The High Priestess",
+    "meaning_upright": "Intuition, wisdom, mystery, inner voice.",
+    "meaning_reversed": "Secrets, confusion, ignoring intuition.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 4,
+  "fields": {
+    "name": "The Empress",
+    "meaning_upright": "Love, abundance, fertility, nurturing.",
+    "meaning_reversed": "Dependence, emptiness, insecurity.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 5,
+  "fields": {
+    "name": "The Emperor",
+    "meaning_upright": "Authority, structure, leadership.",
+    "meaning_reversed": "Domination, rigidity, stubbornness.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 6,
+  "fields": {
+    "name": "The Hierophant",
+    "meaning_upright": "Tradition, learning, spiritual guidance.",
+    "meaning_reversed": "Rebellion, unconventional beliefs.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 7,
+  "fields": {
+    "name": "The Lovers",
+    "meaning_upright": "Love, harmony, partnership.",
+    "meaning_reversed": "Conflict, imbalance, separation.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 8,
+  "fields": {
+    "name": "The Chariot",
+    "meaning_upright": "Victory, determination, willpower.",
+    "meaning_reversed": "Lack of direction, aggression.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 9,
+  "fields": {
+    "name": "Strength",
+    "meaning_upright": "Courage, patience, compassion.",
+    "meaning_reversed": "Fear, weakness, insecurity.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 10,
+  "fields": {
+    "name": "The Hermit",
+    "meaning_upright": "Reflection, solitude, wisdom.",
+    "meaning_reversed": "Isolation, loneliness.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 11,
+  "fields": {
+    "name": "Wheel of Fortune",
+    "meaning_upright": "Destiny, luck, cycles, change.",
+    "meaning_reversed": "Bad luck, setbacks.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 12,
+  "fields": {
+    "name": "Justice",
+    "meaning_upright": "Fairness, truth, responsibility.",
+    "meaning_reversed": "Dishonesty, unfairness.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 13,
+  "fields": {
+    "name": "The Hanged Man",
+    "meaning_upright": "Sacrifice, perspective, surrender.",
+    "meaning_reversed": "Delay, indecision.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 14,
+  "fields": {
+    "name": "Death",
+    "meaning_upright": "Transformation, endings, rebirth.",
+    "meaning_reversed": "Resistance to change.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 15,
+  "fields": {
+    "name": "Temperance",
+    "meaning_upright": "Balance, patience, moderation.",
+    "meaning_reversed": "Imbalance, excess.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 16,
+  "fields": {
+    "name": "The Devil",
+    "meaning_upright": "Attachment, temptation, addiction.",
+    "meaning_reversed": "Freedom, release.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 17,
+  "fields": {
+    "name": "The Tower",
+    "meaning_upright": "Sudden change, revelation.",
+    "meaning_reversed": "Avoiding disaster.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 18,
+  "fields": {
+    "name": "The Star",
+    "meaning_upright": "Hope, inspiration, healing.",
+    "meaning_reversed": "Hopelessness, doubt.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 19,
+  "fields": {
+    "name": "The Moon",
+    "meaning_upright": "Illusion, dreams, intuition.",
+    "meaning_reversed": "Confusion, fear.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 20,
+  "fields": {
+    "name": "The Sun",
+    "meaning_upright": "Success, joy, positivity.",
+    "meaning_reversed": "Temporary sadness.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 21,
+  "fields": {
+    "name": "Judgement",
+    "meaning_upright": "Awakening, reflection.",
+    "meaning_reversed": "Self doubt.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 22,
+  "fields": {
+    "name": "The World",
+    "meaning_upright": "Completion, achievement.",
+    "meaning_reversed": "Unfinished business.",
+    "suit": "",
+    "arcana": "Major"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 23,
+  "fields": {
+    "name": "Ace of Cups",
+    "meaning_upright": "Positive qualities of the Ace of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Ace of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 24,
+  "fields": {
+    "name": "Two of Cups",
+    "meaning_upright": "Positive qualities of the Two of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Two of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 25,
+  "fields": {
+    "name": "Three of Cups",
+    "meaning_upright": "Positive qualities of the Three of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Three of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 26,
+  "fields": {
+    "name": "Four of Cups",
+    "meaning_upright": "Positive qualities of the Four of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Four of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 27,
+  "fields": {
+    "name": "Five of Cups",
+    "meaning_upright": "Positive qualities of the Five of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Five of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 28,
+  "fields": {
+    "name": "Six of Cups",
+    "meaning_upright": "Positive qualities of the Six of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Six of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 29,
+  "fields": {
+    "name": "Seven of Cups",
+    "meaning_upright": "Positive qualities of the Seven of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Seven of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 30,
+  "fields": {
+    "name": "Eight of Cups",
+    "meaning_upright": "Positive qualities of the Eight of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Eight of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 31,
+  "fields": {
+    "name": "Nine of Cups",
+    "meaning_upright": "Positive qualities of the Nine of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Nine of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 32,
+  "fields": {
+    "name": "Ten of Cups",
+    "meaning_upright": "Positive qualities of the Ten of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Ten of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 33,
+  "fields": {
+    "name": "Page of Cups",
+    "meaning_upright": "Positive qualities of the Page of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Page of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 34,
+  "fields": {
+    "name": "Knight of Cups",
+    "meaning_upright": "Positive qualities of the Knight of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Knight of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 35,
+  "fields": {
+    "name": "Queen of Cups",
+    "meaning_upright": "Positive qualities of the Queen of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the Queen of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 36,
+  "fields": {
+    "name": "King of Cups",
+    "meaning_upright": "Positive qualities of the King of Cups.",
+    "meaning_reversed": "Challenges or blocked energy of the King of Cups.",
+    "suit": "Cups",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 37,
+  "fields": {
+    "name": "Ace of Pentacles",
+    "meaning_upright": "Positive qualities of the Ace of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Ace of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 38,
+  "fields": {
+    "name": "Two of Pentacles",
+    "meaning_upright": "Positive qualities of the Two of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Two of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 39,
+  "fields": {
+    "name": "Three of Pentacles",
+    "meaning_upright": "Positive qualities of the Three of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Three of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 40,
+  "fields": {
+    "name": "Four of Pentacles",
+    "meaning_upright": "Positive qualities of the Four of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Four of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 41,
+  "fields": {
+    "name": "Five of Pentacles",
+    "meaning_upright": "Positive qualities of the Five of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Five of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 42,
+  "fields": {
+    "name": "Six of Pentacles",
+    "meaning_upright": "Positive qualities of the Six of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Six of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 43,
+  "fields": {
+    "name": "Seven of Pentacles",
+    "meaning_upright": "Positive qualities of the Seven of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Seven of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 44,
+  "fields": {
+    "name": "Eight of Pentacles",
+    "meaning_upright": "Positive qualities of the Eight of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Eight of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 45,
+  "fields": {
+    "name": "Nine of Pentacles",
+    "meaning_upright": "Positive qualities of the Nine of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Nine of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 46,
+  "fields": {
+    "name": "Ten of Pentacles",
+    "meaning_upright": "Positive qualities of the Ten of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Ten of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 47,
+  "fields": {
+    "name": "Page of Pentacles",
+    "meaning_upright": "Positive qualities of the Page of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Page of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 48,
+  "fields": {
+    "name": "Knight of Pentacles",
+    "meaning_upright": "Positive qualities of the Knight of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Knight of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 49,
+  "fields": {
+    "name": "Queen of Pentacles",
+    "meaning_upright": "Positive qualities of the Queen of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the Queen of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 50,
+  "fields": {
+    "name": "King of Pentacles",
+    "meaning_upright": "Positive qualities of the King of Pentacles.",
+    "meaning_reversed": "Challenges or blocked energy of the King of Pentacles.",
+    "suit": "Pentacles",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 51,
+  "fields": {
+    "name": "Ace of Swords",
+    "meaning_upright": "Positive qualities of the Ace of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Ace of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 52,
+  "fields": {
+    "name": "Two of Swords",
+    "meaning_upright": "Positive qualities of the Two of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Two of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 53,
+  "fields": {
+    "name": "Three of Swords",
+    "meaning_upright": "Positive qualities of the Three of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Three of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 54,
+  "fields": {
+    "name": "Four of Swords",
+    "meaning_upright": "Positive qualities of the Four of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Four of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 55,
+  "fields": {
+    "name": "Five of Swords",
+    "meaning_upright": "Positive qualities of the Five of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Five of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 56,
+  "fields": {
+    "name": "Six of Swords",
+    "meaning_upright": "Positive qualities of the Six of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Six of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 57,
+  "fields": {
+    "name": "Seven of Swords",
+    "meaning_upright": "Positive qualities of the Seven of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Seven of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 58,
+  "fields": {
+    "name": "Eight of Swords",
+    "meaning_upright": "Positive qualities of the Eight of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Eight of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 59,
+  "fields": {
+    "name": "Nine of Swords",
+    "meaning_upright": "Positive qualities of the Nine of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Nine of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 60,
+  "fields": {
+    "name": "Ten of Swords",
+    "meaning_upright": "Positive qualities of the Ten of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Ten of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 61,
+  "fields": {
+    "name": "Page of Swords",
+    "meaning_upright": "Positive qualities of the Page of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Page of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 62,
+  "fields": {
+    "name": "Knight of Swords",
+    "meaning_upright": "Positive qualities of the Knight of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Knight of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 63,
+  "fields": {
+    "name": "Queen of Swords",
+    "meaning_upright": "Positive qualities of the Queen of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the Queen of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 64,
+  "fields": {
+    "name": "King of Swords",
+    "meaning_upright": "Positive qualities of the King of Swords.",
+    "meaning_reversed": "Challenges or blocked energy of the King of Swords.",
+    "suit": "Swords",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 65,
+  "fields": {
+    "name": "Ace of Wands",
+    "meaning_upright": "Positive qualities of the Ace of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Ace of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 66,
+  "fields": {
+    "name": "Two of Wands",
+    "meaning_upright": "Positive qualities of the Two of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Two of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 67,
+  "fields": {
+    "name": "Three of Wands",
+    "meaning_upright": "Positive qualities of the Three of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Three of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 68,
+  "fields": {
+    "name": "Four of Wands",
+    "meaning_upright": "Positive qualities of the Four of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Four of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 69,
+  "fields": {
+    "name": "Five of Wands",
+    "meaning_upright": "Positive qualities of the Five of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Five of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 70,
+  "fields": {
+    "name": "Six of Wands",
+    "meaning_upright": "Positive qualities of the Six of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Six of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 71,
+  "fields": {
+    "name": "Seven of Wands",
+    "meaning_upright": "Positive qualities of the Seven of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Seven of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 72,
+  "fields": {
+    "name": "Eight of Wands",
+    "meaning_upright": "Positive qualities of the Eight of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Eight of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 73,
+  "fields": {
+    "name": "Nine of Wands",
+    "meaning_upright": "Positive qualities of the Nine of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Nine of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 74,
+  "fields": {
+    "name": "Ten of Wands",
+    "meaning_upright": "Positive qualities of the Ten of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Ten of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 75,
+  "fields": {
+    "name": "Page of Wands",
+    "meaning_upright": "Positive qualities of the Page of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Page of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 76,
+  "fields": {
+    "name": "Knight of Wands",
+    "meaning_upright": "Positive qualities of the Knight of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Knight of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 77,
+  "fields": {
+    "name": "Queen of Wands",
+    "meaning_upright": "Positive qualities of the Queen of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the Queen of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.tarotcard",
+  "pk": 78,
+  "fields": {
+    "name": "King of Wands",
+    "meaning_upright": "Positive qualities of the King of Wands.",
+    "meaning_reversed": "Challenges or blocked energy of the King of Wands.",
+    "suit": "Wands",
+    "arcana": "Minor"
+  }
+},
+{
+  "model": "loveapi.playlist",
+  "pk": 2,
+  "fields": {
+    "title": "For you",
+    "description": "i dont listen to much music but i picked some for you",
+    "spotify_link": "https://open.spotify.com/playlist/09vqALk93PBnYyxktg28je?si=dlgZM6pPRNGLlV5q7q1vAw&pi=TQD3NBRDQcCvc",
+    "cover_image": "playlists/Screenshot_2026-07-02_035958.png",
+    "created_at": "2026-07-01T22:30:31.305Z"
+  }
+}
+]
